@@ -1,35 +1,13 @@
-4) Como rodar (passo a passo curto)
+Se você estiver no computador (Windows, Linux ou macOS)
+Copie o código que te enviei e salve em um arquivo chamado calc.c.
+Abra o terminal (ou “Prompt de Comando” no Windows).
+Vá até a pasta onde você salvou o arquivo.
+Digite este comando para compilar o programa:
+gcc calc.c -o calc -lm
 
-No Linux / macOS
+(Se der erro no Windows, instale o MinGW antes — é o compilador C.)
+Depois, rode o programa com:
+./calc
 
-Salve o código em calc.c.
-
-Abra terminal na pasta do arquivo.
-
-Rode: gcc -o calc calc.c -lm
-
-Rode: ./calc
-
-No Windows (MinGW)
-
-Instale MinGW ou TDM-GCC.
-
-Abra terminal (cmd) na pasta.
-
-gcc -o calc.exe calc.c -lm
-
-calc.exe
-
-No Android (ex.: Redmi) usando Termux
-
-Instale Termux (F-Droid recomendado). 
-Wikipédia
-+1
-
-No Termux: pkg update && pkg upgrade -y && pkg install clang (ou pkg install build-essential conforme guia). 
-DEV Community
-+1
-
-Coloque calc.c no dispositivo (ou edite com nano calc.c), compile: clang calc.c -o calc -lm
-
-Execute: ./calc
+ou no Windows:
+calc
