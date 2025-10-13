@@ -1,0 +1,120 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void menu() {
+    printf("\n=== Calculadora Básica ===\n");
+    printf("1) Soma\n");
+    printf("2) Subtracao\n");
+    printf("3) Multiplicacao\n");
+    printf("4) Divisao\n");
+    printf("5) Resto (modulo) - inteiros\n");
+    printf("6) Potencia (x^y)\n");
+    printf("7) Limpar tela\n");
+    printf("0) Sair\n");
+    printf("Escolha uma opcao: ");
+}
+
+int main() {
+    int opc;
+    double a, b;
+    long long ai, bi;
+
+    do {
+        menu();
+        if (scanf("%d", &opc) != 1) {
+            // entrada invalida: limpar buffer e continuar
+            int c;
+            while ((c = getchar()) != '\n' && c != EOF) {}
+            printf("Entrada invalida. Tente novamente.\n");
+            continue;
+        }
+
+        switch (opc) {
+            case 1:
+                printf("Digite dois numeros (ex: 3.5 2): ");
+                if (scanf("%lf %lf", &a, &b) == 2) {
+                    printf("Resultado: %.10g\n", a + b);
+                } else {
+                    printf("Entrada invalida.\n");
+                }
+                break;
+
+            case 2:
+                printf("Digite dois numeros (ex: 5 2.3): ");
+                if (scanf("%lf %lf", &a, &b) == 2) {
+                    printf("Resultado: %.10g\n", a - b);
+                } else {
+                    printf("Entrada invalida.\n");
+                }
+                break;
+
+            case 3:
+                printf("Digite dois numeros (ex: 4 2): ");
+                if (scanf("%lf %lf", &a, &b) == 2) {
+                    printf("Resultado: %.10g\n", a * b);
+                } else {
+                    printf("Entrada invalida.\n");
+                }
+                break;
+
+            case 4:
+                printf("Digite dois numeros (dividendo divisor): ");
+                if (scanf("%lf %lf", &a, &b) == 2) {
+                    if (b == 0.0) {
+                        printf("Erro: divisao por zero!\n");
+                    } else {
+                        printf("Resultado: %.10g\n", a / b);
+                    }
+                } else {
+                    printf("Entrada invalida.\n");
+                }
+                break;
+
+            case 5:
+                printf("Digite dois inteiros (ex: 7 3): ");
+                if (scanf("%lld %lld", &ai, &bi) == 2) {
+                    if (bi == 0) {
+                        printf("Erro: divisao por zero!\n");
+                    } else {
+                        printf("Resultado: %lld\n", ai % bi);
+                    }
+                } else {
+                    printf("Entrada invalida. Use inteiros para modulo.\n");
+                }
+                break;
+
+            case 6:
+                printf("Digite base e expoente (ex: 2 3): ");
+                if (scanf("%lf %lf", &a, &b) == 2) {
+                    double res = pow(a, b);
+                    printf("Resultado: %.10g\n", res);
+                } else {
+                    printf("Entrada invalida.\n");
+                }
+                break;
+
+            case 7:
+                #ifdef _WIN32
+                    system("cls");
+                #else
+                    system("clear");
+                #endif
+                break;
+
+            case 0:
+                printf("Saindo...\n");
+                break;
+
+            default:
+                printf("Opcao invalida. Tente novamente.\n");
+        }
+
+        // limpar o buffer de entrada até final de linha antes de mostrar o menu de novo
+        int ch;
+        while ((ch = getchar()) != '\n' && ch != EOF) {}
+
+    } while (opc != 0);
+
+    return 0;
+}
