@@ -1,0 +1,34 @@
+Calculadora Basica em C
+======================
+
+Arquivos:
+- calc.c       : codigo-fonte em C
+- REDMI.txt    : este arquivo (instrucoes)
+
+Compilar e rodar no Linux / macOS (com GCC):
+$ gcc -o calc calc.c -lm
+$ ./calc
+
+Compilar e rodar no Windows (MinGW):
+> gcc -o calc.exe calc.c -lm
+> calc.exe
+
+Obs:
+- O '-lm' liga a biblioteca matematica (pow).
+- Se usar clang em vez de gcc, o comando funciona igualmente:
+  clang -o calc calc.c -lm
+
+Executar no celular Android (ex.: telefone Redmi):
+- Instale o app Termux (ou similar) para obter um ambiente terminal Linux no Android.
+  No Termux, atualize e instale o compilador:
+  $ pkg update && pkg upgrade -y
+  $ pkg install clang
+- Copie calc.c para o dispositivo (via USB, git, ou editor nano)
+- Compile no Termux:
+  $ clang calc.c -o calc -lm
+- Execute:
+  $ ./calc
+
+(Observacao: Redmi é a marca de smartphones da Xiaomi; se voce pretende rodar no aparelho, o Termux possibilita compilar/rodar C no Android). Referencias: Redmi (marca) e Termux. 
+
+Licenca: uso educacional. Sinta-se livre para modificar o codigo.
