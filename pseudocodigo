@@ -1,0 +1,42 @@
+INICIO
+  repetir
+    mostrar menu:
+      1 soma
+      2 subtracao
+      3 multiplicacao
+      4 divisao
+      5 modulo (inteiros)
+      6 potencia
+      7 limpar tela
+      0 sair
+    ler opcao
+
+    se opcao == 1:
+      ler a, b
+      mostrar a + b
+    senao se opcao == 2:
+      ler a, b
+      mostrar a - b
+    senao se opcao == 3:
+      ler a, b
+      mostrar a * b
+    senao se opcao == 4:
+      ler a, b
+      se b == 0 entao mostrar "erro: divisao por zero"
+      senao mostrar a / b
+    senao se opcao == 5:
+      ler ai, bi (inteiros)
+      se bi == 0 entao mostrar "erro: divisao por zero"
+      senao mostrar ai % bi
+    senao se opcao == 6:
+      ler a, b
+      mostrar pow(a, b)
+    senao se opcao == 7:
+      limpar tela
+    senao se opcao == 0:
+      sair
+    senao:
+      mostrar "opcao invalida"
+  ate opcao == 0
+FIM
+
