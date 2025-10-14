@@ -1,13 +1,1 @@
-Se você estiver no computador (Windows, Linux ou macOS)
-Copie o código que te enviei e salve em um arquivo chamado calc.c.
-Abra o terminal (ou “Prompt de Comando” no Windows).
-Vá até a pasta onde você salvou o arquivo.
-Digite este comando para compilar o programa:
-gcc calc.c -o calc -lm
 
-(Se der erro no Windows, instale o MinGW antes — é o compilador C.)
-Depois, rode o programa com:
-./calc
-
-ou no Windows:
-calc
