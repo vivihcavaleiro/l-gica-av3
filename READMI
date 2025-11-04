@@ -1,3 +1,37 @@
 AVALIAÇÃO AV3
 
 CALCULADORA SIMPLES
+
+Projeto: Calculadora Básica em C
+Este é um projeto de uma calculadora simples desenvolvida em linguagem C.
+
+O que o programa faz?
+A calculadora permite que você escolha uma das seguintes operações e insira dois números para realizar o cálculo:
+
+Adição (+)
+
+Subtração (-)
+
+Multiplicação (*)
+
+Divisão (/)
+
+Potenciação (^)
+
+Como você pode usar?
+O programa precisa ser compilado antes de ser executado. O código-fonte principal é o arquivo calc.c.
+Para quem usa Computador (Linux, macOS, ou Windows com MinGW):
+Use o compilador GCC (ou Clang) para transformar o código-fonte em um programa executável.
+
+Comando de Compilação: gcc -o calc calc.c -lm
+Nota: O -lm é importante porque ele "liga" a biblioteca matemática necessária para a função de potenciação.
+Depois, execute o arquivo gerado:
+
+Comando de Execução: ./calc (no Linux/macOS) ou calc.exe (no Windows).
+Para quem usa Celular Android (com Termux):
+Se você estiver usando um celular da marca Redmi (ou qualquer Android) e tiver o aplicativo Termux instalado, é possível compilar e rodar o código C diretamente no seu dispositivo, seguindo os mesmos passos de compilação.
+Este projeto é liberado para uso educacional, então sinta-se à vontade para estudar e modificar o código!
+
+TABUADA
+
+
