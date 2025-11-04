@@ -1,1 +1,48 @@
+ALGORITMO JogoDeAdivinhacao
+// Objetivo: O usuário tenta adivinhar um número secreto gerado aleatoriamente
+// dentro de um intervalo definido.
 
+VAR
+  numero_secreto: INTEIRO
+  palpite: INTEIRO
+  tentativas: INTEIRO = 0
+  limite_inferior: INTEIRO = 1
+  limite_superior: INTEIRO = 100
+
+INÍCIO
+   1. Configurar e gerar o número secreto
+  SEMENTE_ALEATÓRIA(TEMPO_ATUAL()) // Inicializa a semente para aleatoriedade
+  numero_secreto <- (ALEATÓRIO % limite_superior) + 1 // Gera número entre 1 e 100
+
+   2. Apresentação do jogo
+  ESCREVER "Jogo de Adivinhação!"
+  ESCREVER "Escolhi um número entre ", limite_inferior, " e ", limite_superior, ". Adivinhe qual é."
+
+   3. Loop principal de adivinhação
+  REPITA
+    ESCREVER " " // Linha em branco
+    ESCREVER "Qual é o número: "
+
+    // Tenta ler o palpite e faz tratamento de erro
+    SE NÃO (LER palpite) FOR BEM-SUCEDIDO OU palpite NÃO FOR INTEIRO ENTAO
+      ESCREVER "Entrada inválida! Por favor, digite apenas números."
+      LIMPAR_BUFFER_ENTRADA() // Descarta a entrada inválida
+      CONTINUAR_PRÓXIMA_ITERACAO
+    FIM_SE
+
+    // Se o palpite for válido
+    tentativas <- tentativas + 1
+
+    4. Dicas e verificação
+    SE palpite < numero_secreto ENTAO
+      ESCREVER "digite um numero maior."
+    SENAO SE palpite > numero_secreto ENTAO
+      ESCREVER "digite um numero menor."
+    SENAO // palpite == numero_secreto
+      ESCREVER " " // Linha em branco
+      ESCREVER "🎉 Parabéns! Você acertou (", numero_secreto, ") em ", tentativas, " tentativas!"
+    FIM_SE
+
+  ENQUANTO palpite != numero_secreto // Repete até acertar
+
+FIM_ALGORITMO
