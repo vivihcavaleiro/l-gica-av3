@@ -1,0 +1,58 @@
+Markdown
+Tabuada Simples em C
+
+Este é um projeto simples implementado em linguagem C, destinado a calcular e exibir a tabuada de um número inteiro fornecido pelo usuário.
+
+Funcionalidades
+
+* Solicita ao usuário que digite um número inteiro.
+* Calcula e exibe a tabuada desse número de 1 até 10.
+* Código fonte compacto e didático.
+
+Tecnologias Utilizadas
+
+*Linguagem: C
+*Compilador:Qualquer compilador C padrão (ex: GCC)
+
+Como Compilar e Executar
+Pré-requisitos
+Você precisa ter um compilador C (como o GCC) instalado em seu sistema.
+
+1. Salvar o Código
+Salve o código-fonte (que você forneceu) em um arquivo chamado, por exemplo, tabuada.c.
+
+2. Compilar
+Abra o terminal ou prompt de comando e execute:
+
+bash
+gcc tabuada.c -o tabuada
+gcc: É o comando do compilador GNU C.
+
+tabuada.c: É o arquivo de código-fonte.
+
+-o tabuada: Define o nome do arquivo de saída (executável) como tabuada.
+
+3. Executar
+Execute o programa compilado:
+
+No Linux/macOS:
+Bash
+./tabuada
+No Windows:
+Bash
+
+tabuada
+Estrutura do Código
+O programa utiliza a função scanf para ler a entrada e um loop for para iterar de 1 a 10, calculando e imprimindo o resultado (n * i) em cada repetição.
+C
+// Estrutura principal
+int main() {
+    int n, i;
+    // Leitura da entrada
+    scanf("%d", &n); 
+    // Loop de cálculo
+    for (i = 1; i <= 10; i++) {
+        printf("%d x %d = %d\n", n, i, n * i);
+    }
+    return 0;
+}
