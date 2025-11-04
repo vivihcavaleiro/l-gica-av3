@@ -1,0 +1,23 @@
+ALGORITMO Tabuada
+//Objetivo: Calcular e exibir a tabuada de um número fornecido pelo usuário.
+VAR
+  n: INTEIRO // O número base para o cálculo da tabuada
+  i: INTEIRO // Variável de controle (contador de 1 a 10)
+
+INÍCIO
+  // 1. Solicitar a entrada do usuário
+  ESCREVER "Digite um número: "
+  LER n
+
+  // 2. Exibir o cabeçalho da tabuada
+  ESCREVER " " // Linha em branco
+  ESCREVER "Tabuada de ", n, ":"
+
+  // 3. Loop para calcular e exibir a tabuada de 1 a 10
+  PARA i DE 1 ATÉ 10 FAÇA
+    // Exibir a operação e o resultado
+    resultado <- n * i
+    ESCREVER n, " x ", i, " = ", resultado
+  FIM_PARA
+
+FIM_ALGORITMO
