@@ -55,3 +55,41 @@ No Linux/macOS, use: ./tabuada
 No Windows, geralmente é: tabuada.exe
 O programa usará a função scanf para ler o seu número e um loop (for) para fazer o cálculo 10 vezes e mostrar o resultado.
 Se precisar de ajuda com a tradução desse texto ou com qualquer outro código, é só me dizer!
+
+JOGO DE ADIVINHA
+
+É um projeto de um jogo de adivinhação desenvolvido em C. O objetivo é adivinhar o número secreto escolhido pelo computador.
+
+Como funciona o jogo?
+O Número Secreto: O jogo escolhe aleatoriamente um número entre 1 e 100.
+Dicas: A cada palpite, o programa diz se o número secreto é "maior" ou "menor" que o seu palpite.
+Pontuação: Ele conta quantas tentativas você precisou para acertar.
+Segurança: O código é robusto e não trava se você, por engano, digitar letras em vez de números.
+
+Como usar o programa?
+Para jogar, você precisa ter um compilador C (como o GCC) no seu computador.
+Salve o Código: Salve o código-fonte em um arquivo chamado adivinhacao.c.
+Compile: Abra o terminal e use o comando para criar o programa executável:
+
+Bash
+gcc adivinhacao.c -o adivinhacao
+Execute: Inicie o jogo executando o arquivo gerado.
+No Linux/macOS, use: ./adivinhacao
+No Windows, use: adivinhacao.exe
+
+Exemplo de Jogo
+O jogo é simples e direto, um exemplo:
+
+Jogo de Adivinhação!
+Escolhi um número entre 1 e 100. Adivinhe qual é.
+
+Qual é o número: 50
+digite um numero maior.
+
+Qual é o número: 75
+digite um numero menor.
+
+Qual é o número: 62
+
+Parabéns! Você acertou (62) em 3 tentativas!
+Posso gerar o código C completo ou traduzir este texto para outra língua, se você precisar!
