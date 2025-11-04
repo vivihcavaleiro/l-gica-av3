@@ -32,6 +32,26 @@ Para quem usa Celular Android (com Termux):
 Se você estiver usando um celular da marca Redmi (ou qualquer Android) e tiver o aplicativo Termux instalado, é possível compilar e rodar o código C diretamente no seu dispositivo, seguindo os mesmos passos de compilação.
 Este projeto é liberado para uso educacional, então sinta-se à vontade para estudar e modificar o código!
 
-TABUADA
+TABUADA SIMPLES EM C
 
+É um programa muito simples, escrito em linguagem C, que tem o objetivo de calcular e mostrar a tabuada de qualquer número inteiro que você digitar.
 
+O que ele faz?
+Ele pede para você digitar um número inteiro.
+Em seguida, ele calcula e exibe a tabuada completa desse número, de 1 até 10.
+O código é bem curto e fácil de entender, ideal para quem está começando a aprender C.
+
+Como usar o programa?
+Para usar este programa, você precisará de um compilador C, como o GCC, instalado no seu computador.
+Salve o Código: Pegue o código-fonte (que está no arquivo tabuada.c) e salve-o.
+Compile: Abra o terminal ou prompt de comando e use o seguinte comando para transformar o código em um programa executável:
+
+Bash
+
+gcc tabuada.c -o tabuada
+Execute: Rode o programa compilado.
+
+No Linux/macOS, use: ./tabuada
+No Windows, geralmente é: tabuada.exe
+O programa usará a função scanf para ler o seu número e um loop (for) para fazer o cálculo 10 vezes e mostrar o resultado.
+Se precisar de ajuda com a tradução desse texto ou com qualquer outro código, é só me dizer!
