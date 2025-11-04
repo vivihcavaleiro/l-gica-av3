@@ -1,0 +1,43 @@
+Jogo de Adivinhação C
+
+Funcionalidades
+
+*Geração Aleatória:O número secreto é gerado de forma pseudo-aleatória entre 1 e 100.
+*Sistema de Dicas:Informa ao jogador se o palpite é "maior" ou "menor" que o número secreto.
+*Contagem de Tentativas:Registra o número total de palpites necessários para acertar.
+*Tratamento de Erro:Possui um robusto tratamento para entradas não numéricas, evitando travamentos do programa.
+
+Tecnologias Utilizadas
+
+*Linguagem:C (padrão C99 ou superior)
+*Bibliotecas:"stdio.h", "stdlib.h", "time.h"
+*Compilador:** GCC (ou similar)
+
+Como Compilar e Executar
+
+Pré-requisitos
+É necessário ter um compilador C (como o GCC) instalado e configurado no seu sistema.
+
+1. Salvar o Código
+Salve o código-fonte em um arquivo chamado, por exemplo, `adivinhacao.c`.
+
+2. Compilar
+Abra o terminal e use o GCC para compilar o arquivo:
+
+```bash
+gcc adivinhacao.c -o adivinhacao
+
+3. ExecutarInicie o jogo executando o arquivo gerado:No Linux/macOS:Bash./adivinhacao
+No Windows:Bashadivinhacao.exe
+Estrutura do Código (Visão Geral)Seção do CódigoFunçãoGeração AleatóriaUsa srand(time(0)) e rand() para garantir que o número secreto seja diferente a cada vez.Loop PrincipalUm loop do-while mantém o jogo em execução até que o palpite seja igual ao numero_secreto.Tratamento de ErroO if (scanf(...) != 1) verifica entradas inválidas e while (getchar() != '\n'); limpa o buffer de entrada.DicasEstruturas if-else if-else fornecem o feedback de "maior" ou "menor" ao jogador.🌟 Exemplo de ExecuçãoJogo de Adivinhação!
+Escolhi um número entre 1 e 100. Adivinhe qual é.
+
+Qual é o número: 50
+digite um numero maior.
+
+Qual é o número: 75
+digite um numero menor.
+
+Qual é o número: 62
+
+🎉 Parabéns! Você acertou (62) em 3 tentativas!
