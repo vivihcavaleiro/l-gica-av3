@@ -58,6 +58,8 @@ Se precisar de ajuda com a tradução desse texto ou com qualquer outro código,
 
 JOGO DE ADIVINHA
 
+
+
 É um projeto de um jogo de adivinhação desenvolvido em C. O objetivo é adivinhar o número secreto escolhido pelo computador.
 
 Como funciona o jogo?
