@@ -2,6 +2,9 @@ AVALIAÇÃO AV3
 
 CALCULADORA SIMPLES
 
+<img width="1563" height="473" alt="Captura de tela 2025-11-18 112517" src="https://github.com/user-attachments/assets/4a8ad1b6-2b6f-4e21-b4b5-419866d74b69" />
+
+
 Projeto: Calculadora Básica em C
 Este é um projeto de uma calculadora simples desenvolvida em linguagem C.
 
