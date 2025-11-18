@@ -58,6 +58,7 @@ Se precisar de ajuda com a tradução desse texto ou com qualquer outro código,
 
 JOGO DE ADIVINHA
 
+<img width="1420" height="792" alt="image" src="https://github.com/user-attachments/assets/404c137b-6efe-4893-9f5b-144e8099e912" />
 
 
 É um projeto de um jogo de adivinhação desenvolvido em C. O objetivo é adivinhar o número secreto escolhido pelo computador.
